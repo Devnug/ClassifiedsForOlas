@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="@color/white"
+    android:padding="6dip">
+    <!-- School Name -->
+   <TextView
+		android:id="@+id/toptext"
+
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+
+		android:textStyle="bold"
+		android:singleLine="true"
+		android:ellipsize="marquee"
+   />
+
+       <!-- Actual School Name Data -->
+   <TextView
+		android:id="@+id/toptextdata"
+
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:layout_toRightOf="@id/toptext"
+        android:textStyle="bold"
+
+		android:singleLine="true"
+		android:ellipsize="marquee"
+        android:fontFamily="sans-serif"
+   />
+
+   <!-- Desc Tag -->
+   <TextView
+	 	android:id="@+id/middletext"
+
+	 	android:layout_width="wrap_content"
+	 	android:layout_height="wrap_content"
+
+		android:layout_alignParentLeft="true"
+		android:layout_below="@id/toptext"
+
+	 	android:textStyle="bold"
+	 	android:gravity="center_vertical"
+   	/>
+
+   	       <!-- Actual Desc Data -->
+
+   <TextView
+       android:id="@+id/middletextdata"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_alignTop="@id/middletext"
+       android:layout_below="@id/toptext"
+       android:layout_toRightOf="@id/middletext"
+       android:gravity="center_vertical"
+       android:textStyle="italic"
+       android:fontFamily="sans-serif"/>
+
+   	<!-- Long Desc Tag -->
+
+   <TextView
+       android:id="@+id/longdesc"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@id/middletextdata"
+       android:singleLine="false"
+       android:text="descTag"
+       android:textStyle="bold"
+       android:visibility="gone" />
+
+   <!-- This is the actual description -->
+
+      <TextView
+          android:id="@+id/longdesctext"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignTop="@id/longdesc"
+          android:layout_below="@id/middletextdata"
+          android:layout_toRightOf="@id/longdesc"
+          android:singleLine="false"
+          android:text="descTagTest"
+          android:visibility="gone" />
+
+
+</RelativeLayout>

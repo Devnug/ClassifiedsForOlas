@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:id="@+id/data_list"
+    >
+    
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1,2">
+    
+	<TableRow
+	    android:id="@+id/tableRow1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_gravity="top"
+	    android:padding="5dip">
+
+		<EditText
+		    android:id="@+id/SearchText"
+		    android:layout_width="wrap_content"
+		    android:layout_height="54dp"
+		    android:ems="5"
+		    android:padding="10dp"
+		    android:textSize="24sp" >
+
+		</EditText>
+
+
+	</TableRow>
+	
+</TableLayout>
+	<com.etsy.android.grid.StaggeredGridView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/grid_view"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		app:item_margin="8dp"
+		app:column_count="2" />
+
+</LinearLayout>
